@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chat App</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <form class="hidden" id="login-form">
+                <!-- input has to be inside the form -->
+                <input 
+                required maxlength="15"
+                type="text"
+                placeholder="What is your name?">
+                <input type="submit" value="Log In">
+            </form>
+            <h1 class ="hidden" id ="greeting"></h1>
+            <button class="hidden" id="logOut">Log Out</button>
+        </header>
+        <div id="chatWindow">
+            <div id="chatWrapper"></div>
+        </div>
+        <form id="messageForm">
+            <input type="text" id="messageInput" placeholder="Enter a message.">
+            <button type="submit">Send</button>
+        </form>
+    </body>
+    <script src="main.js" type="module" async def></script>
+</html>

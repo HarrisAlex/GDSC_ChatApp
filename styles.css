@@ -1,0 +1,180 @@
+:root {
+    --panel-bg: rgb(205, 205, 205, 0.3);
+    --panel-blur: blur(10px);
+
+    --header-bg: rgb(220, 220, 220);
+    --header-outline: rgb(150, 150, 150);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+
+    overflow: hidden;
+    background: linear-gradient(to bottom, #D4CDF4, #9CEAEF, #ffffff, #aed6ff);
+    background-size: 100vw 100vh;
+}
+
+.hidden {
+    display: none;
+}
+
+header {
+    height: 15vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: calc(100vw - 4rem);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    background-color: var(--header-bg);
+    border-bottom: 1px solid var(--header-outline);
+
+    z-index: 10;
+}
+
+header h1 {
+    margin: 0;
+}
+
+#chatWindow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 2rem);
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    z-index: 0;
+
+    scrollbar-width: none;
+}
+
+#chatWindow::-webkit-scrollbar {
+    display: none;
+}
+
+#chatWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    z-index: 0;
+
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;    
+
+    width: fit-content;
+
+    animation: slideRight 0.5s ease-in-out;
+}
+
+.message.userSent {
+    align-self: flex-end;
+
+    animation: slideLeft 0.5s ease-in-out;
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.messageText {
+    background-color: rgb(79, 79, 79);
+    color: white;
+    
+    padding: 1rem;
+    margin: 0;
+    border-radius: 32px;
+
+    width: fit-content;
+}
+
+.message.userSent .messageText {
+    background-color: rgb(75, 21, 168);
+}
+
+.timestamp {
+    color: black;
+    margin: 0;
+
+    font-size: 0.8rem;
+
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.message.userSent .timestamp {
+    text-align: right;
+}
+
+#messageForm {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    height: 15vh;
+
+    margin: 0;
+
+    background-color: var(--panel-bg);
+    backdrop-filter: var(--panel-blur);
+    
+    z-index: 10;
+}
+
+input {
+    border: none;
+    border-radius: 16px;
+
+    height: 1.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+button {
+    border: none;
+    border-radius: 16px;
+
+    height: 1.5rem;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
