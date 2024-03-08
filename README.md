@@ -11,7 +11,6 @@ The following prerequisites must be completed before you start these labs
 * Live Preview Extension
 
 
-
 # Getting Started
 
 Please follow the instructions below to start the Firebase:
@@ -24,4 +23,4 @@ Please follow the instructions below to start the Firebase:
 
 If you didn’t copy it, you can still find it:
 * Go to Project Overview
-* Click Project Settings (You can find your Javascript code)
+* Click Project Settings
