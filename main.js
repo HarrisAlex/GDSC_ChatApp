@@ -34,8 +34,3 @@ function onLogin(event) {
 function onLogout() {
 
 }
-
-// Set the username and refresh page
-function setUsername(username) {
-
-}
