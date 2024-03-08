@@ -1,10 +1,10 @@
-#GDSC - Firebase Workshop
+# GDSC - Firebase Workshop
 
 Welcome to the Firebase Workshop! This hands-on session will guide you through the process of setting up a Firebase project, establishing a connection to the project using JavaScript via the Firebase CDN. 
 Additionally, you'll learn how to add new database records dynamically through code, enabling users to seamlessly send data to the Firebase server. 
 
 
-#General Prerequisites
+# General Prerequisites
 
 The following prerequisites must be completed before you start these labs
 * Visual Studio Code
@@ -12,7 +12,7 @@ The following prerequisites must be completed before you start these labs
 
 
 
-#Before you begin
+# Before you begin
 
 Please follow the instructions below to start the Firebase:
 * Go to https://console.firebase.google.com/u/0/ 
