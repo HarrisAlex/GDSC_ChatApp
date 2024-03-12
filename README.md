@@ -19,8 +19,9 @@ Please follow the instructions below to start the Firebase:
 * Enter your project name and continue
 * Turn off the Enable Google Analytics for this project
 * Click Create Project
-* Make sure to copy the Firebase Configuration
 
-If you didn’t copy it, you can still find it:
-* Go to Project Overview
-* Click Project Settings
+* Click the Web button to register your app
+* Enter your App nickname
+* Click Register app
+* Copy the Firebase Configuration
+(If you have not copied it, you can still find it in Project Settings)
