@@ -3,7 +3,8 @@
 // Firebase Configuration
 
 // Initialize Firebase
-
+import { } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+import { } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-database.js";
 
 // Get all required references to HTML elements
 
