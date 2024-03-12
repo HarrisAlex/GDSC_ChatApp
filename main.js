@@ -11,7 +11,21 @@ import { } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-database.js"
 
 // Get username from the API local storage
 
+
 // Check if username exists
+
+
+
+// Handle login
+function onLogin(event) {
+
+}
+
+// Handle logout
+function onLogout() {
+
+}
+
 
 // Send message to the database
 function sendMessage(event) {
@@ -24,14 +38,3 @@ function createMessageElement(message, sender) {
 }
 
 // Listen for new messages
-
-
-// Handle login
-function onLogin(event) {
-
-}
-
-// Handle logout
-function onLogout() {
-
-}
