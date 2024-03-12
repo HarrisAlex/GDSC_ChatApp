@@ -15,6 +15,7 @@ The following prerequisites must be completed before you start these labs
 # Getting Started
 
 Please follow the instructions below to start the Firebase:
+### Step 1
 * Go to https://console.firebase.google.com/u/0/ 
 * Click Create a Project
 * Enter your project name and continue
@@ -22,7 +23,7 @@ Please follow the instructions below to start the Firebase:
 * Click Create Project
 
 ---
-
+### Step 2
 * Click the Web button to register your app
 * Enter your App nickname
 * Click Register app
@@ -30,3 +31,14 @@ Please follow the instructions below to start the Firebase:
 
 
 (If you have not copied it, you can still find it in Project Settings)
+
+---
+### Step 3
+* Click Build on the left
+* Click Realtime Database
+* Click Create Database
+* Click Next
+* Click Enable
+* Click the Rules next to the Data
+* Change False to True in code
+* Click Publish
