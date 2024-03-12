@@ -7,7 +7,7 @@ Additionally, you'll learn how to add new database records dynamically through c
 
 # General Prerequisites
 
-The following prerequisites must be completed before you start these labs
+The following prerequisites must be completed before you start this project
 * Visual Studio Code
 * Live Preview Extension
 
